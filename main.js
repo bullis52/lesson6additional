@@ -15,8 +15,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
                 let p = document.createElement('p')
                 userDiv.append(p)
+                userDiv.append(btn)
                 userDiv.append(block)
-                userDiv.append(btn);
                 btn.innerText = 'press'
                 p.innerText = `${user.id} ${user.name} ${user.username}`
                 btn.onclick = function () {
